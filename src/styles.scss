@@ -1,0 +1,8 @@
+@import './reset.css';
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+app-root {
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+}
