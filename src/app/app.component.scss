@@ -23,9 +23,10 @@ h3::before {
   content: "©";
 }
 
-app-registration, app-login {
+app-registration, app-login, app-table {
   height: 100%;
   display: flex;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
 }

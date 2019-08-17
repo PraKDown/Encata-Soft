@@ -1,0 +1,29 @@
+div.table {
+  width: 70%;
+  height: 50%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  text-align: center;
+}
+
+::ng-deep .mat-sort-header-container {
+  display: flex;
+  justify-content: center;
+}
+
+div.filters {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+
+  mat-form-field {
+    width: 15%;
+  }
+}
