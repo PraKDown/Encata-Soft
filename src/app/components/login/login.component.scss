@@ -1,3 +1,11 @@
+:host {
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
 mat-card {
   width: 300px;
   height: 250px;

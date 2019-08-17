@@ -1,0 +1,6 @@
+<button mat-button [matMenuTriggerFor]="menu" class="menu">Menu</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item (click)="swap('login')">Login</button>
+  <button mat-menu-item (click)="swap('registration')">Registration</button>
+  <button mat-menu-item (click)="swap('table')">Table</button>
+</mat-menu>
