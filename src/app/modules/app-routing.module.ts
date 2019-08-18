@@ -7,7 +7,8 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'registration', component: RegistrationComponent },
   { path: 'table', loadChildren: '../modules/table/table.module#TableModule' },
-  // { path: '**', redirectTo: 'login' }
+  { path: 'cards', loadChildren: '../modules/cards/cards.module#CardsModule' },
+  { path: '**', redirectTo: 'login' }
 ];
 
 @NgModule({

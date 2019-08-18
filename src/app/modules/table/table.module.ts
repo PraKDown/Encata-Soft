@@ -20,7 +20,6 @@ const routes: Routes = [
     MatFormFieldModule,
     MatInputModule,
     RouterModule.forChild(routes)
-  ],
-  bootstrap: []
+  ]
 })
 export class TableModule { }

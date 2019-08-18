@@ -1,0 +1,8 @@
+<div class="cards">
+  <mat-card *ngFor="let card of cards" [routerLink]="['params', card.number]">
+    <span>{{card.number}}</span>
+  </mat-card>
+</div>
+<div class="choice">
+  <router-outlet></router-outlet>
+</div>

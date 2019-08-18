@@ -1,0 +1,40 @@
+:host {
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+div {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+div.cards {
+  height: 50%;
+  justify-content: space-around;
+}
+
+div.choice {
+  height: 20%;
+  justify-content: center;
+  color: white;
+  font-size: 32px;
+}
+
+mat-card {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 64px;
+}
+
+mat-card:hover {
+  transform: scale(1.05)
+}
