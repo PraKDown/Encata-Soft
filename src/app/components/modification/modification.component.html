@@ -1,0 +1,13 @@
+<mat-card>
+  <mat-form-field class="example-full-width">
+    <input #input matInput placeholder="Enter the word" (change)="changeWord(input.value)">
+  </mat-form-field>
+  <div>
+    <app-size [word]="word" (newSize)="result.size = $event"></app-size>
+    <app-color [word]="word" (newColor)="result.color = $event"></app-color>
+    <app-style [word]="word" (newStyle)="result.style = $event"></app-style>
+  </div>
+  <span [style.fontSize.px]="result.size" [style.color]="result.color" [style.fontStyle]="result.style">
+    {{word === undefined || word === '' ? 'Result' : word}}
+  </span>
+</mat-card>

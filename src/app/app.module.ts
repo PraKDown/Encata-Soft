@@ -5,7 +5,7 @@ import { AppRoutingModule } from './modules/app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule, MatCheckboxModule, MatInputModule, MatButtonModule,
-  MatCardModule, MatMenuModule } from '@angular/material';
+  MatCardModule, MatMenuModule, MatSliderModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { RegistrationComponent } from './components/registration/registration.component';
@@ -31,6 +31,7 @@ import { HeaderMenuComponent } from './components/header/header-menu.component';
     MatButtonModule,
     MatCardModule,
     MatMenuModule,
+    MatSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

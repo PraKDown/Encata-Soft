@@ -8,6 +8,7 @@ const routes: Routes = [
   { path: 'registration', component: RegistrationComponent },
   { path: 'table', loadChildren: '../modules/table/table.module#TableModule' },
   { path: 'cards', loadChildren: '../modules/cards/cards.module#CardsModule' },
+  { path: 'modification', loadChildren: '../modules/modification/modification.module#ModificationModule' },
   { path: '**', redirectTo: 'login' }
 ];
 

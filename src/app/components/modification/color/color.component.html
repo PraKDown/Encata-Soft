@@ -1,0 +1,5 @@
+<mat-button-toggle-group [disabled]="word === undefined || word === ''" (change)="changeColor($event.value)" value="white">
+  <mat-button-toggle value="white">White</mat-button-toggle>
+  <mat-button-toggle value="#c2185b">Pink</mat-button-toggle>
+  <mat-button-toggle value="black">Black</mat-button-toggle>
+</mat-button-toggle-group>
