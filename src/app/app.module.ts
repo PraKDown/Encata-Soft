@@ -5,13 +5,13 @@ import { AppRoutingModule } from './modules/app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule, MatCheckboxModule, MatInputModule, MatButtonModule,
-  MatCardModule, MatMenuModule, MatSliderModule } from '@angular/material';
+  MatCardModule, MatMenuModule, MatSliderModule, MatSnackBarModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { RegistrationComponent } from './components/registration/registration.component';
 import { LoginComponent } from './components/login/login.component';
 import { HeaderMenuComponent } from './components/header/header-menu.component';
-
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -31,7 +31,9 @@ import { HeaderMenuComponent } from './components/header/header-menu.component';
     MatButtonModule,
     MatCardModule,
     MatMenuModule,
-    MatSliderModule
+    MatSliderModule,
+    HttpClientModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { AuthenticationService } from '../../services/authentication.service';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-registration',
@@ -10,7 +12,10 @@ export class RegistrationComponent implements OnInit {
 
   form: FormGroup;
 
-  constructor() { }
+  constructor(
+    private authService: AuthenticationService,
+    private snackBar: MatSnackBar
+  ) { }
 
   ngOnInit() {
     this.form = new FormGroup({
@@ -22,7 +27,14 @@ export class RegistrationComponent implements OnInit {
   }
 
   submit() {
-    // console.log(this.form);
+    this.authService.registration(this.form.value).subscribe((response) => {
+      //TODO:
+     },
+     (error) => {
+       this.snackBar.open(error.message, 'Ok', {
+         duration: 5000
+       });
+     });
   }
 
   checkEmailOrPhone(control: FormControl) {

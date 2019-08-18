@@ -7,7 +7,7 @@
     <app-color [word]="word" (newColor)="result.color = $event"></app-color>
     <app-style [word]="word" (newStyle)="result.style = $event"></app-style>
   </div>
-  <span [style.fontSize.px]="result.size" [style.color]="result.color" [style.fontStyle]="result.style">
+  <span [ngStyle]="{ 'font-size': result.size + 'px', 'color': result.color, 'font-style': result.style }">
     {{word === undefined || word === '' ? 'Result' : word}}
   </span>
 </mat-card>
