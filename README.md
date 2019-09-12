@@ -1,2 +1,2 @@
-# Test task for Encata-Soft
+# Test task
 https://encata-testtask.netlify.com
